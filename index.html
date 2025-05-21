@@ -1,27 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Math App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Math Exhibition App</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f5f7fa;
-      color: #333;
-      text-align: center;
-      padding: 40px;
+      background-color: #121212;
+      color: #f5f5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
     }
-    iframe {
-      width: 90%;
-      height: 600px;
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #ffca28;
+      text-shadow: 1px 1px 8px #000;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #cccccc;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .button {
+      margin-top: 40px;
+      background: linear-gradient(135deg, #ff6f00, #ffa000);
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.1em;
       border: none;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 5px 15px rgba(255, 167, 38, 0.4);
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(255, 167, 38, 0.6);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>📊 Welcome to My Math Exhibition App!</h1>
-  <p>This app is smart, helpful, and made with Python!</p>
-  <iframe src="https://huggingface.co/spaces/blossom23/smart-math-app"></iframe>
+  <h1>🌙 AI Math App</h1>
+  <p>Click the button below to explore the power of Python + Math in action — made by me for the exhibition!</p>
+
+  <a href="https://huggingface.co/spaces/blossom23/smart-math-app" target="_blank">
+    <button class="button">🚀 Launch My App</button>
+  </a>
+
+  <footer>Created with ❤️ for Math Week 2025</footer>
 </body>
 </html>
